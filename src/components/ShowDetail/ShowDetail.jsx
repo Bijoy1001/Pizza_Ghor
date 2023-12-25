@@ -10,21 +10,21 @@ const ShowDetail = () => {
     const heldleClick = ()  => {
        
       // console.log(show);
-      const addedDonation = [];
-      const DonationItems = JSON.parse(localStorage.getItem('donation'));
+      const addedOrder = [];
+      const OrderItems = JSON.parse(localStorage.getItem('Order'));
 
-      if(!DonationItems) {
-        addedDonation.push(show);
-        localStorage.setItem('donation', JSON.stringify(addedDonation));
-        toast('Your Donation is successfull');
+      if(!OrderItems) {
+        addedOrder.push(show);
+        localStorage.setItem('Order', JSON.stringify(addedOrder));
+        toast('Your Order is successfull');
       }
 
       else{
-          const isExits = DonationItems.find(show => show.id == id)
+          const isExits = OrderItems.find(show => show.id == id)
           
           if(!isExits){
-            addedDonation.push(...DonationItems, show)
-            localStorage.setItem('donation', JSON.stringify(addedDonation));
+            addedOrder.push(...OrderItems, show)
+            localStorage.setItem('Order', JSON.stringify(addedOrder));
             toast('Your Order is successfull');
           }
           

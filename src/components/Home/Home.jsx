@@ -58,7 +58,8 @@ const Home = () => {
                card.map(card => <Card key={card.id} card={card}></Card>) 
             }
         </div>
-        <div className="flex justify-center items-center gap-8 text-white mt-10">
+        <div className="flex justify-center items-center m-10 pl-10"> 
+        <div className=" grid lg:grid-cols-2 lg:grid-rows-1 gap-8 text-white mt-10 ">
             <div>
                 <h1 className="text-4xl font-bold mt-8">Contact Information</h1>
                  <h2 className="text-xl mt-4">Address</h2>
@@ -67,10 +68,11 @@ const Home = () => {
                  <p className="mt-2">017169314**</p>
                  <p>sahariar2015402115@bsdi-bd.org</p>
             </div>
-            <div className="col-12 col-lg-6">
-            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shohid%20Noor%20Hossain%20Square,%20Dhaka%201000&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
+            <div className=" col-12 col-lg-6">
+            <iframe width="320" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shohid%20Noor%20Hossain%20Square,%20Dhaka%201000&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
 
             </div>
+        </div>
         </div>
     
          <div className="pt-4">
